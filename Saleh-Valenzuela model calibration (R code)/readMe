@@ -1,0 +1,10 @@
+This folder contains the R code for calibrating the Saleh-Valenzuela model using the kernel-based ABC method proposed in 
+A. Bharti, F.-X. Briol, and T. Pedersen, “A general method for calibrating stochastic radio channel models with kernels,” IEEE Trans. on Antennas and Propag., 2021. 
+(available at https://arxiv.org/abs/2012.09612).
+
+functions.R:    file containing all the relevant functions needed to run the main.R file. Load these functions in the environment before running the main.R file.
+param.rds:      consists of M=2000 parameter values sampled from the uniformly distributed prior distribution. The prior ranges for all the parameters are given in main.R file. 
+                In case the prior ranges are changed, the parameter values should be sampled again.
+S.rds:          The log temporal moments simulated from the Saleh-Valenzuela model coresponding to the parameters in param.rds. The dimension of S is 100x4x2000 (NxKxM), where
+                N is the number of realizations of each temporal moment, K is the number of temporal moments used, and M is number of parameter samples.
+                
