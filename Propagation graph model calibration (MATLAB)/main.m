@@ -9,10 +9,13 @@ clear all;
 tic
 %% Loading data
 load('param1.mat'); 
-load('data_moments.mat');
+load('data_moments1.mat');
+S1 = S;
+load('data_moments2.mat');
+S2 = S;
 nMoments = 4; % number of temporal moments to be used for calibration
 param = param(:,1:2000); % parameter values sampled from prior
-S = Moments(:,1:nMoments,1:2000); 
+S = [S1,S2]; 
 S = log(S); % Corresponding log temporal moments simulated from the graph model
 %% Parameters
 B = 4e9; % Bandwidth
