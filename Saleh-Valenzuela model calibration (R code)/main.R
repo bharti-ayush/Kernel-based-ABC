@@ -5,8 +5,8 @@ library(MASS)
 library(mvtnorm)
 
 # Loading Data
-param <- readRDS(file = "param_500.rds")  # parameter values sampled from the prior for the first iteration of ABC algorithm
-S <- readRDS(file = "newS.rds")           # temporal moments simulated based on the sampled parameter values
+param <- readRDS(file = "param.rds")  # parameter values sampled from the prior for the first iteration of ABC algorithm
+S <- readRDS(file = "S.rds")           # temporal moments simulated based on the sampled parameter values
 S <- S[1:100,,] # Taking the number of realizations of temporal moments to be N_sim = 100
 
 #######-------- Parameter Settings -------########
