@@ -1,6 +1,6 @@
 This folder contains the MATLAB code for calibrating the Propagation Graph (PG) model using the kernel-based ABC method proposed in 
 A. Bharti, F.-X. Briol, and T. Pedersen, “A general method for calibrating stochastic radio channel models with kernels,” IEEE Trans. on Antennas and Propag., 2021. 
-(available at https://arxiv.org/abs/2012.09612).
+(available at https://ieeexplore.ieee.org/document/9445690).
 
 main.m:         This is the main file to run the code.
 param1.mat:     This file consists of the M=2000 values of the four model parameters sampled from the prior distribution. See the main file for prior boundaries of parameters.
